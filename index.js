@@ -1,10 +1,17 @@
 // Write your code here!
 // remove 'main#main', expect <main id="main"></main to not exist
 // id selector #
-var main = document.getElementById('main');
-main.remove();
+var main = document.getElementById('main')
+main.remove()
 
-var newHeader = document.createElement("h1#victory");
+var newHeader = document.createElement("h1")
+newHeader.id = "victory"
+newHeader.innerHTML = "YOUR-NAME is the champion"
+document.body.appendChild(newHeader)
+// document.body gives us access to the body
+// append newHeader after first body tag
+
+
 // document.body.onload = addElement;
 
 // function addElement() {
